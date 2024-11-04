@@ -1,101 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 
-        <style>
-           html{
-
-}
-main{
-
-}
-.main-sidebar{
-
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
-    border-radius: 5px;
-    border:5px solid #330000;
-
-    /*top: 0;*/
-    height: 100%;
-    width: 250px;
-    /*background-color: #007bff;*/
-    background-color: #6777ef;
-    /* z-index: 880; */
-    left: 15px;
-
-}
-ul{
-    list-style-type: none;
-}
-#nav-list{
-    a{
-        color:white;
-    }
-    a:hover{
-        padding: 5px;
-        margin: 5px;
-        left: 0;
-        border-radius: 5px;
-        background-color: white;
-        color:darkblue;
-    }
-    li a{
-        text-decoration: none;
-    }
-
-    padding: 10px;
-    margin: 10px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-
-        </style>
+    <style>
+        html {}
+        
+        main {}
+        
+        .main-sidebar {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+            border-radius: 5px;
+            border: 5px solid #330000;
+            /*top: 0;*/
+            height: 100%;
+            width: 250px;
+            /*background-color: #007bff;*/
+            background-color: #6777ef;
+            /* z-index: 880; */
+            left: 15px;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        #nav-list {
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        a:hover {
+            padding: 5px;
+            margin: 5px;
+            left: 0;
+            border-radius: 5px;
+            background-color: white;
+            color: blue;
+        }
+        
+        li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 
 </head>
+
 <body>
-<main >
-    <h1 align="center">This is first:))</h1>
-    <h2 >Test::fresh</h2>
+    <main>
+        <h1 align="center">This is first:))</h1>
+        <h2>Test::fresh</h2>
 
-    <div>
-        <!--        <audio controls>-->
-        <!--            <source src="学不会.ogg" type="audio/ogg">-->
-        <!--            <source src="学不会.mp3" type="audio/mpeg">-->
-        <!--        </audio>-->
-    </div>
-    <div class="main-sidebar">
-        <ul id="nav-list">
-            <li><a href="https://www.msn.cn/zh-cn/play?cgfrom=cg_ntp_pivot&ocid=msedgntphdr&cvid=67134a494fe940be9101f7cf1634a2d7">web1</a></li>
-            <li><a href="https://vektech.notion.site/b6f5a623bfb44e97a7b50278fe8066c3">web2-dsaa</a></li>
-            <li><a href="https://www.iconfont.cn/" >web3-alishiliang</a></li>
-            <li><a href="https://element.eleme.cn/#/zh-CN" >web4-element</a></li>
-            <li><a href="https://www.todesk.com/download.html" >Todesk-download</a></li>
-            <li><a href="" >web6</a></li>
-        </ul>
-    </div>
+        <div>
+            <!--        <audio controls>-->
+            <!--            <source src="学不会.ogg" type="audio/ogg">-->
+            <!--            <source src="学不会.mp3" type="audio/mpeg">-->
+            <!--        </audio>-->
+        </div>
+        <div class="main-sidebar">
+            <ul id="nav-list">
+                <li><a href="https://www.msn.cn/zh-cn/play?cgfrom=cg_ntp_pivot&ocid=msedgntphdr&cvid=67134a494fe940be9101f7cf1634a2d7">web1</a></li>
+                <li><a href="https://vektech.notion.site/b6f5a623bfb44e97a7b50278fe8066c3">web2-dsaa</a></li>
+                <li><a href="https://www.iconfont.cn/">web3-alishiliang</a></li>
+                <li><a href="https://element.eleme.cn/#/zh-CN">web4-element</a></li>
+                <li><a href="https://www.todesk.com/download.html">Todesk-download</a></li>
+                <li><a href="">web6</a></li>
+            </ul>
+        </div>
 
-</main>
-<script>
-    // 获取特定的 ul
-    const ul = document.getElementById('nav-list');
-    // 获取 ul 中的所有 li 元素
-    const lis = ul.getElementsByTagName('li');
-    // 遍历每个 li 元素并设置内联样式
-    for (let i = 0; i < lis.length; i++) {
-        lis[i].classList.add('nav-list')
+    </main>
+    <script>
+        // 获取特定的 ul
+        const ul = document.getElementById('nav-list');
+        // 获取 ul 中的所有 li 元素
+        const lis = ul.getElementsByTagName('li');
+        // 遍历每个 li 元素并设置内联样式
+        for (let i = 0; i < lis.length; i++) {
+            lis[i].classList.add('nav-list')
 
-    }
-</script>
-<footer>
-    copyright &copy X 7 Y by Github
-</footer>
+        }
+    </script>
+    <footer>
+        copyright &copy X 7 Y by Github
+    </footer>
 </body>
+
 </html>
