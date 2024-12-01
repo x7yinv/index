@@ -2,31 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="    style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
-<main >
-    <h1 align="center">This is first:))</h1>
-    <h2 >Test::fresh</h2>
 
-    <div class="main-sidebar" id="nav-list">
-        <div >
-        <ul>
-            <li><a href="https://www.msn.cn/zh-cn/play?cgfrom=cg_ntp_pivot&ocid=msedgntphdr&cvid=67134a494fe940be9101f7cf1634a2d7">web1</a></li>
-            <li><a href="https://vektech.notion.site/b6f5a623bfb44e97a7b50278fe8066c3">web2-dsaa</a></li>
-            <li><a href="https://www.iconfont.cn/" >web3-alishiliang</a></li>
-            <li><a href="https://element.eleme.cn/#/zh-CN" >web4-element</a></li>
-            <li><a href="https://www.todesk.com/download.html" >Todesk-download</a></li>
-            <li><a href="https://modao.cc/usergrowth/webpage.html?jsid=SEM-BAIDU-modao2-TY-7461&bd_vid=10318178585215250067" >web6==墨刀ui</a></li>
-            <li><a href="https://pixso.cn/ui-design-collaboration/" >Pixso(推荐)</a></li>
-        </ul>
+<div id="wrapper">
+    <header>
+        <h1>This is first:))</h1>
+    </header>
+    <div >
+        <nav-transverse>
+            <ul>
+                <li><a href="">JAVA</a></li>
+                <li><a href="">HTML</a></li>
+                <li><a href="">DSAA</a></li>
+            </ul>
+        </nav-transverse>
+    </div>
+    <div>
+        <!--        <audio controls>-->
+        <!--            <source src="" type="audio/ogg">-->
+        <!--            <source src="" type="audio/mpeg">-->
+        <!--        </audio>-->
+    </div>
+    <div class="nav-vertical" >
+        <nav>
+            <h2 >Test::fresh</h2>
+            <ul >
+                <li><a href="https://www.msn.cn/zh-cn/play?cgfrom=cg_ntp_pivot&ocid=msedgntphdr&cvid=67134a494fe940be9101f7cf1634a2d7">web1</a></li>
+                <li><a href="https://vektech.notion.site/b6f5a623bfb44e97a7b50278fe8066c3">web2-dsaa</a></li>
+                <li><a href="https://www.iconfont.cn/" >web3-alishiliang</a></li>
+                <li><a href="https://element.eleme.cn/#/zh-CN" >web4-element</a></li>
+                <li><a href="https://www.todesk.com/download.html" >Todesk-download</a></li>
+                <li><a href="https://modao.cc/usergrowth/webpage.html?jsid=SEM-BAIDU-modao2-TY-7461&bd_vid=10318178585215250067" >web6==墨刀ui</a></li>
+                <li><a href="https://pixso.cn/ui-design-collaboration/" >Pixso(推荐)</a></li>
+            </ul>
+        </nav>
+        <div class="nav-vertical" >
+            <ul class="nav-tab">
+                <li data-tab="item1">Html</li>
+                <li data-tab="item2">Java</li>
+                <li data-tab="item3">Key</li>
+            </ul>
         </div>
     </div>
 
-</main>
 
+
+
+    <main >
+        <div>
+            <div class="content">
+                <div id="item1" style="display:none;">
+                    <code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                        &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;title&gt;示例页面&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                        &lt;p&gt;这是一个示例段落。&lt;/p&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                </div>
+                <div id="item2"><code>
+                    public class Test {
+                        public static void main(String[] args) {
+                            System.out.println("Hello,world");
+                        }
+                    }
+
+                </code>
+                </div>
+                <div id="item3"><code>
+                    UX394X3HLT-eyJsaWNlbnNlSWQiOiJVWDM5NFgzSExUIiwibGljZW5zZWVOYW1lIjoiSG9uZ2lrIFVuaXZlcnNpdHntmY3snbXrj
+                    IDtlZnqtZAiLCJsaWNlbnNlZVR5cGUiOiJDTEFTU1JPT00iLCJhc3NpZ25lZU5hbWUiOiLkvJfliJvkupEg5bel5L2c5a6kIiwiY
+                    XNzaWduZWVFbWFpbCI6ImhhbmF6YXdhbWl0b0BnbWFpbC5jb20iLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiJGb3IgZWR1Y2F0aW9uY
+                    WwgdXNlIG9ubHkiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IkdPIiwicGFpZFVwVG8iO
+                    iIyMDI0LTEyLTEzIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSUzAiLCJwYWlkVXBUbyI6IjIwMjQtMTItMTMiLCJleHRlb
+                    mRlZCI6ZmFsc2V9LHsiY29kZSI6IkRNIiwicGFpZFVwVG8iOiIyMDI0LTEyLTEzIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiO
+                    iJDTCIsInBhaWRVcFRvIjoiMjAyNC0xMi0xMyIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiUlNVIiwicGFpZFVwVG8iOiIyM
+                    DI0LTEyLTEzIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSU0MiLCJwYWlkVXBUbyI6IjIwMjQtMTItMTMiLCJleHRlbmRlZ
+                    CI6dHJ1ZX0seyJjb2RlIjoiUEMiLCJwYWlkVXBUbyI6IjIwMjQtMTItMTMiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkRTI
+                    iwicGFpZFVwVG8iOiIyMDI0LTEyLTEzIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSRCIsInBhaWRVcFRvIjoiMjAyNC0xM
+                    i0xMyIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiUkMiLCJwYWlkVXBUbyI6IjIwMjQtMTItMTMiLCJleHRlbmRlZCI6ZmFsc
+                    2V9LHsiY29kZSI6IlJTRiIsInBhaWRVcFRvIjoiMjAyNC0xMi0xMyIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJSTSIsInBha
+                    WRVcFRvIjoiMjAyNC0xMi0xMyIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiSUkiLCJwYWlkVXBUbyI6IjIwMjQtMTItMTMiL
+                    CJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkRQTiIsInBhaWRVcFRvIjoiMjAyNC0xMi0xMyIsImV4dGVuZGVkIjpmYWxzZX0se
+                    yJjb2RlIjoiREIiLCJwYWlkVXBUbyI6IjIwMjQtMTItMTMiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkRDIiwicGFpZFVwV
+                    G8iOiIyMDI0LTEyLTEzIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJQUyIsInBhaWRVcFRvIjoiMjAyNC0xMi0xMyIsImV4d
+                    GVuZGVkIjpmYWxzZX0seyJjb2RlIjoiUlNWIiwicGFpZFVwVG8iOiIyMDI0LTEyLTEzIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZ
+                    SI6IldTIiwicGFpZFVwVG8iOiIyMDI0LTEyLTEzIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJQU0kiLCJwYWlkVXBUbyI6I
+                    jIwMjQtMTItMTMiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUENXTVAiLCJwYWlkVXBUbyI6IjIwMjQtMTItMTMiLCJleHRlb
+                    mRlZCI6dHJ1ZX0seyJjb2RlIjoiUlMiLCJwYWlkVXBUbyI6IjIwMjQtMTItMTMiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiR
+                    FAiLCJwYWlkVXBUbyI6IjIwMjQtMTItMTMiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUERCIiwicGFpZFVwVG8iOiIyMDI0L
+                    TEyLTEzIiwiZXh0ZW5kZWQiOnRydWV9XSwibWV0YWRhdGEiOiIwMTIwMjMxMjI4TFBBQTAwNDAwOCIsImhhc2giOiI1MjY4NzM4N
+                    y8yNTMxODE0MTotMTUwNDg0MzkwMSIsImdyYWNlUGVyaW9kRGF5cyI6NywiYXV0b1Byb2xvbmdhdGVkIjpmYWxzZSwiaXNBdXRvU
+                    HJvbG9uZ2F0ZWQiOmZhbHNlLCJ0cmlhbCI6ZmFsc2UsImFpQWxsb3dlZCI6dHJ1ZX0=-YqDHrEIEaf/x1JqIdTI64AYA1IpRoYiq
+                    oZ/1YDnfpEqSFNJIC4er7K1hjUm9tFslnY2XoNRs04JSUG8CgNkTgIKA4xLyxGBufJYyHv26UKQmyf1nb1pM9XATb3pWSQ3h6o8/
+                    4x3jacVk3zbAuXt3uV6eEj2bCZvhGpATFmK1JVsSor+XgPr5aYePCtyymiyPOq33ghW5onzSI5LsQR5motHvLgWmjf0Mkutys3Sm
+                    Wt13YVcIe5yCzhlTNCZw++CAuRh2Fx/JXZhRt+kUqW2yLbkIo3kNEg2I31H8qya+RDJ09Qz7DsDkrIgODqX4Wbd2fy1C7Q1Ccjjk
+                    svjhswnpNA==-MIIETDCCAjSgAwIBAgIBDzANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTIyMTA
+                    xMDE2MDU0NFoXDTI0MTAxMTE2MDU0NFowHzEdMBsGA1UEAwwUcHJvZDJ5LWZyb20tMjAyMjEwMTAwggEiMA0GCSqGSIb3DQEBAQU
+                    AA4IBDwAwggEKAoIBAQC/W3uCpU5M2y48rUR/3fFR6y4xj1nOm3rIuGp2brELVGzdgK2BezjnDXpAxVDw5657hBkAUMoyByiDs2M
+                    gmVi9IcqdAwpk988/Daaajq9xuU1of59jH9eQ9c3BmsEtdA4boN3VpenYKATwmpKYkJKVc07ZKoXL6kSyZuF7Jq7HoQZcclChbF7
+                    5QJPGbri3cw9vDk/e46kuzfwpGftvl6+vKibpInO6Dv0ocwImDbOutyZC7E+BwpEm1TJZW4XovMBegHhWC04cJvpH1u98xoR94ic
+                    hw0jKhdppywARe43rGU96163RckIuFmFDQKZV9SMUrwpQFu4Z2D5yTNqnlLRfAgMBAAGjgZkwgZYwCQYDVR0TBAIwADAdBgNVHQ4
+                    EFgQU5FZqQ4gnVc+inIeZF+o3ID+VhcEwSAYDVR0jBEEwP4AUo562SGdCEjZBvW3gubSgUouX8bOhHKQaMBgxFjAUBgNVBAMMDUp
+                    ldFByb2ZpbGUgQ0GCCQDSbLGDsoN54TATBgNVHSUEDDAKBggrBgEFBQcDATALBgNVHQ8EBAMCBaAwDQYJKoZIhvcNAQELBQADggI
+                    BANLG1anEKid4W87vQkqWaQTkRtFKJ2GFtBeMhvLhIyM6Cg3FdQnMZr0qr9mlV0w289pf/+M14J7S7SgsfwxMJvFbw9gZlwHvhBl
+                    24N349GuthshGO9P9eKmNPgyTJzTtw6FedXrrHV99nC7spaY84e+DqfHGYOzMJDrg8xHDYLLHk5Q2z5TlrztXMbtLhjPKrc2+Zaj
+                    FFshgE5eowfkutSYxeX8uA5czFNT1ZxmDwX1KIelbqhh6XkMQFJui8v8Eo396/sN3RAQSfvBd7Syhch2vlaMP4FAB11AlMKO2x/1
+                    hoKiHBU3oU3OKRTfoUTfy1uH3T+t03k1Qkr0dqgHLxiv6QU5WrarR9tx/dapqbsSmrYapmJ7S5+ghc4FTWxXJB1cjJRh3X+gwJIH
+                    jOVW+5ZVqXTG2s2Jwi2daDt6XYeigxgL2SlQpeL5kvXNCcuSJurJVcRZFYUkzVv85XfDauqGxYqaehPcK2TzmcXOUWPfxQxLJd2T
+                    rqSiO+mseqqkNTb3ZDiYS/ZqdQoGYIUwJqXo+EDgqlmuWUhkWwCkyo4rtTZeAj+nP00v3n8JmXtO30Fip+lxpfsVR3tO1hk4Vi2k
+                    mVjXyRkW2G7D7WAVt+91ahFoSeRWlKyb4KcvGvwUaa43fWLem2hyI4di2pZdr3fcYJ3xvL5ejL3m14bKsfoOv
+
+                </code>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<script>
+    const tabs=document.querySelectorAll('.nav-tab li')
+    const items=document.querySelectorAll('.content div')
+    tabs.forEach((e)=>{
+        e.addEventListener('click',()=>{
+            tabs.forEach((e)=>{e.classList.remove('active')})
+            e.classList.add('active')
+            const tabId=e.dataset.tab;
+            items.forEach((el)=>{ el.style.display='none'})
+            const displayContent=document.getElementById(tabId).style.display='block'
+
+        })
+    })
+</script>
 <footer>
     copyright &copy X 7 Y by Github
 </footer>
