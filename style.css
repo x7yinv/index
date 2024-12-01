@@ -1,45 +1,102 @@
-html{
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    background-color:#6c757d;
+}
+h1 {
+    text-align: center;
+    margin: auto;
+    font-size: 3em;
 
 }
-main{
+
+
+#wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    height: calc(97vh);
+    background-color: #b3c7e6;
+    /*background-color: #00005d;*/
+
+    /*background: linear-gradient(to right ,deepskyblue, dodgerblue);*/
+}
+body
+{
+}
+
+header {
+    display: flex;
+    background-color: #869dc7;
+    color: #00005d;
+    background-image: url("img/lighthouselogo.jpg");
+    background-repeat: no-repeat;
+    height: 111px;
+}
+
+main {
+
+    background-color: #FFFFFF;
+    margin-left: 300px;
+    padding-left:30px;
+    padding: 1px 20px 20px 20px;
 
 }
-.main-sidebar{
-
+.nav-vertical{
+    float: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
     border-radius: 5px;
-    border:5px solid #330000;
-
+    border: 3px solid #330000;
     /*top: 0;*/
-    height: 100%;
     width: 250px;
     /*background-color: #007bff;*/
     background-color: #6777ef;
     /* z-index: 880; */
     left: 15px;
-
+    text-align: initial;
 }
-ul{
+
+ul {
     list-style-type: none;
 }
-#nav-list{
-    a{
-        color:white;
-    }
-    a:hover{
-        padding: 5px;
-        margin: 5px;
-        left: 0;
-        border-radius: 5px;
-        background-color: white;
-        color:darkblue;
-    }
-    li a{
-        text-decoration: none;
-    }
+nav-transverse ul{
 
-    padding: 10px;
-    margin: 10px;
+        display: flex;
+        justify-content: space-around;
+        direction: rtl;
+        border:3px solid #330000;
+        background-color: white;
+        padding: 0;
+        margin: 0;
+
+
+}
+
+
+nav a:hover {
+    padding: 5px;
+    margin: 5px;
+
+    border-radius: 5px;
+    background-color: white;
+    color: darkblue;
+}
+
+li a {
+    text-decoration: none;
+}
+nav li {
+
+    padding: 15px;
+    margin: 15px;
+}
+
+
+nav a {
+    color: white;
 }
 
 footer {
@@ -48,7 +105,12 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
+code{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: #333;
+    white-space: pre-wrap;
+}
    
 
 
